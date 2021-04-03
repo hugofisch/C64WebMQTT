@@ -1,0 +1,3 @@
+const char MyTemp_name[5] = 
+/* "temp" */
+{0x74, 0x65, 0x6d, 0x70, };

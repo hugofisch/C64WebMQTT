@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Commodore 64</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="c64.css">
+<style>
+        #top, #bottom, #left, #right {
+            background: #8880E0;
+            }
+            #left, #right {
+                position: fixed;
+                top: 0; bottom: 0;
+                width: 55px;
+                }
+                #left { left: 0; }
+                #right { right: 0; }
+            #top, #bottom {
+                position: fixed;
+                left: 0; right: 0;
+                height: 55px;
+                }
+                #top { top: 0; }
+                #bottom { bottom: 0; }
+        @media 
+        /* Fairly small screens including iphones */
+        only screen and (max-width: 500px),
+        /* iPads */
+        only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+        {
+            #top, #bottom, #left, #right { display: none; }
+        }
+    </style>
+<script type="text/javascript" src="/temp.js"></script>
+</head>
+<body>
+<div class="text">
+<!h1> <br></h1>
+<h1>**** COMMODORE 64 BASIC V2 ****</h1>
+<!h1> <br></h1>
+<h1>64K RAM SYSTEM 38911 BASIC BYTES FREE</h1>
+<!h1> <br></h1>
+</div>
+<div class="ready">READY.</div>
+<div class="ready">LOAD "WEBSERVER",8</div>
+<div class="ready">  &nbsp;     </div>
+<div class="ready">SEARCHING FOR WEBSERVER</div>
+<div class="ready">LOADING</div>
+<div class="ready">READY.</div>
+<div class="ready">LIST</div>
+<div class="ready">  &nbsp;     </div>
+<div class="ready">10 PRINT "THIS IS A REAL COMMODORE 64"</div>
+<div class="ready">20 PRINT "RUNNING A WEBSERVER WITH <a href="http://contiki-os.org">CONTIKI</a>"</div>
+<div class="ready">30 PRINT "JUST FOR FUN."</div>
+<div class="ready">READY.  </div>
+<div class="ready">  &nbsp;     </div>
+<div class="ready">CURRENT TEMPERATURE:  <span id="displayCelsius">24,7</span> &deg C</div>
+<span id="typed-cursor" class="blinking">&#9608;</span>
+<pre>
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+</pre>
+</body>
+</html>
