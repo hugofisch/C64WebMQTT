@@ -213,6 +213,8 @@ PT_THREAD(send_headers(struct httpd_state *s, const char *statushdr))
 //Added my Marc Burkhardt    
   } else if(strncmp(http_js, ptr, 3) == 0) {
     ptr = http_content_type_js;
+  } else if(strncmp(http_ico, ptr, 4) == 0) {
+    ptr = http_content_type_ico;
   } else if(strncmp(http_eot, ptr, 4) == 0) {
     ptr = http_content_type_eot;
   } else if(strncmp(http_woff2, ptr, 6) == 0) {
